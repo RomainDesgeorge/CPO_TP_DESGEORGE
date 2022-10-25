@@ -15,9 +15,10 @@ public class TP2_convertisseurObjet_Desgeorge {
      */
     public static void main(String[] args) {
         Convertisseur Temperature = new Convertisseur(); 
-        Temperature = FarenheitVersKelvin(Temperature);
         Convertisseur Temperature2 = new Convertisseur(); 
-        Temperature2 = CelciusVersFarenheit(Temperature2);
+        double temp=1.0;
+        Temperature.FarenheitVersKelvin(temp);
+        Temperature2.CelciusVersFarenheit(temp);
         
         
         // TODO code application logic here
