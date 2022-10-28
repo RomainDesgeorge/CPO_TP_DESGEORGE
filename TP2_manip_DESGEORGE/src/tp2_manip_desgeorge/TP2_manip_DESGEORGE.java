@@ -21,7 +21,23 @@ public class TP2_manip_DESGEORGE {
         assiette1 = assiette3 ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ;
-    
+        
+        //Moussaka assiette666 = assiette1 ;
+        //Moussaka assiette667 = new Tartiflette() ; Les deux lignes sont impossibles donc une référence objet qui annonce référencer un type d’objet ne peut pas en référencer un autre qui n’a aucun rapport 
+        
+        Moussaka assiette10 = new Moussaka(400) ;
+        Moussaka assiette11 = new Moussaka(500) ;
+        Moussaka assiette12 = new Moussaka(600) ;
+        Moussaka assiette13 = new Moussaka(700) ;
+        Moussaka assiette14 = new Moussaka(800) ;
+        Moussaka assiette15 = new Moussaka(900) ;
+        Moussaka assiette16 = new Moussaka(1000) ;
+        Moussaka assiette17 = new Moussaka(1100) ;
+        Moussaka assiette18 = new Moussaka(1300) ;
+        Moussaka assiette19 = new Moussaka(1500) ;
+        
+        //Question 7: On pourrait avoir un objet, et qu’une référence vers cet objet soit en fait un attribut d’un autre objet
+        //Donc c'est finalement une façon de modéliser une relation entre deux objets.
         
 
 // TODO code application logic here
