@@ -10,9 +10,9 @@ package tp2_relation_1_desgeorge;
  */
 public class Voiture {
     public Voiture(String uneCaracteristique, String uneMarque, int nbplaces){
-        Caracteristique = uneCaracteristique;
-        Marque = uneMarque;
-        places = nbplaces;
+        Caracteristique = uneCaracteristique;//prendre en donnée uneCaracteristique et le transformer en Caracteristique
+        Marque = uneMarque;//prendre en donnée uneMarque et le transformer en Marque
+        places = nbplaces;//prendre en donnée nbplaces et le transformer en places
     }
     String Caracteristique;
     String Marque;
@@ -20,7 +20,7 @@ public class Voiture {
     Personne Proprietaire ;
     
     @Override
-    public String toString() {
+    public String toString() {//Lire la classe Voiture
 String chaine_a_retourner;
 chaine_a_retourner = Marque + Caracteristique + " qui contient "+ places+" places ";
 return chaine_a_retourner ;
