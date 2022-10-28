@@ -12,13 +12,18 @@ public class Personne {
     public Personne(String unPrenom, String unNom){
         Prenom = unPrenom;
         Nom = unNom;
+        nbVoitures = 0;
+        liste_voitures = new Voiture [3] ;
     }
     String Prenom;
     String Nom;
+    int nbVoitures ;
+    Voiture [] liste_voitures ;
 
+    @Override
     public String toString() {
     String chaine_a_retourner;
-    chaine_a_retourner ="La personne est "+ Prenom + " " + Nom ;
+    chaine_a_retourner = Prenom + " " + Nom ;
     return chaine_a_retourner ;
     } 
     
