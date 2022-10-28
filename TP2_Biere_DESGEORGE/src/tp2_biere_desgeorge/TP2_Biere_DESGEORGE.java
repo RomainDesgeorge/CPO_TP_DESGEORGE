@@ -29,7 +29,7 @@ troisBiere.lireEtiquette();//Lire "troisBiere"
 BouteilleBiere quatreBiere = new BouteilleBiere("La Chouffe",8.0,"Nain sur un vélo") ;//Création de "quatreBiere"
 quatreBiere.lireEtiquette();//Lire "quatreBiere"
 
-quatreBiere.decapsuler();
+uneBiere.decapsuler();//on decapsule "quatreBiere"
 
 System.out.println(uneBiere) ;
 
