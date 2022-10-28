@@ -36,6 +36,19 @@ public class TP2_manip_DESGEORGE {
         Moussaka assiette18 = new Moussaka(1300) ;
         Moussaka assiette19 = new Moussaka(1500) ;
         
+        int [] Tab = new int [10];
+        Tab[0] = assiette10.nbCalories;
+        Tab[1] = assiette11.nbCalories;
+        Tab[2] = assiette12.nbCalories;
+        Tab[3] = assiette13.nbCalories;
+        Tab[4] = assiette14.nbCalories;
+        Tab[5] = assiette15.nbCalories;
+        Tab[6] = assiette16.nbCalories;
+        Tab[7] = assiette17.nbCalories;
+        Tab[8] = assiette18.nbCalories;
+        Tab[9] = assiette19.nbCalories;
+
+        
         //Question 7: On pourrait avoir un objet, et qu’une référence vers cet objet soit en fait un attribut d’un autre objet
         //Donc c'est finalement une façon de modéliser une relation entre deux objets.
         
