@@ -20,22 +20,32 @@ public class Personne {
     int nbVoitures ;
     Voiture [] liste_voitures ;
 
-    public boolean ajouter_voiture( Voiture voiture_a_ajouter, Personne personne) {
+    public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
     boolean bool = true;
+    boolean bool1 = true;
         for (int i=0;i<3;i++){
-            if (personne.liste_voitures[i]==null){
-                bool =false;
+            if (liste_voitures[i]!=null){
+                bool1 =false;
                 break;
             }
             else{
-                bool = true;
+                bool1 = true;
             }
        }
-        if (personne.nbVoitures>3){
-            bool = true;
+        if (nbVoitures>3){
+            bool1 = true;
         }
+        
+       if (bool1 = true){
+        liste_voitures[nbVoitures] = voiture_a_ajouter;
+        nbVoitures +=1;
+        voiture_a_ajouter.Proprietaire = this;
+       }
         return bool;
     }
+    
+   
+    
     @Override
     public String toString() {
     String chaine_a_retourner;
