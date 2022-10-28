@@ -20,12 +20,27 @@ public class TP2_relation_1_DESGEORGE {
     Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5) ;
     Voiture une2008 = new Voiture ("2008", "Peugeot", 6) ;
     Voiture uneMicra = new Voiture ("Micra", "Nissan", 4) ;
+    
+    
     bob.liste_voitures[0] = uneClio ;
     bob.nbVoitures = 1 ;
     uneClio.Proprietaire = bob ;
-    System.out.println("la premiere voiture de Bob est " +
-    bob.liste_voitures[0] ) ;
+    
+    bob.liste_voitures[1] = uneAutreClio ;
+    bob.nbVoitures = 2 ;
+    uneAutreClio.Proprietaire = bob ;
+    
+    reno.liste_voitures[0] = une2008 ;
+    reno.nbVoitures = 1 ;
+    une2008.Proprietaire = reno ;
+    
+    reno.liste_voitures[1] = uneMicra ;
+    reno.nbVoitures = 2 ;
+    uneMicra.Proprietaire = reno ;
     System.out.println("liste des voitures disponibles \n"+ uneClio +"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
+    System.out.println("la premiere voiture de Bob est une "+ bob.liste_voitures[0]+ " et sa deuxieme voiture est une "+bob.liste_voitures[1] ) ;
+    System.out.println("la premiere voiture de Reno est "+ reno.liste_voitures[0]+" et sa deuxieme voiture est une "+reno.liste_voitures[1] ) ;
+    
         // TODO code application logic here
     }
     
