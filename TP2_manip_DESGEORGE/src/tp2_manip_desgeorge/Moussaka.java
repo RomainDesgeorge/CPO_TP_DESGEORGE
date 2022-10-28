@@ -10,7 +10,7 @@ package tp2_manip_desgeorge;
  */
 public class Moussaka {
     public Moussaka(int cal) {
-        nbCalories=cal;
+        nbCalories=cal;//prendre en donnée cal et le transformer en nbCalories
     }
 int nbCalories;
 }
