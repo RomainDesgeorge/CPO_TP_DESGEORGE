@@ -20,6 +20,22 @@ public class Personne {
     int nbVoitures ;
     Voiture [] liste_voitures ;
 
+    public boolean ajouter_voiture( Voiture voiture_a_ajouter, Personne personne) {
+    boolean bool = true;
+        for (int i=0;i<3;i++){
+            if (personne.liste_voitures[i]==null){
+                bool =false;
+                break;
+            }
+            else{
+                bool = true;
+            }
+       }
+        if (personne.nbVoitures>3){
+            bool = true;
+        }
+        return bool;
+    }
     @Override
     public String toString() {
     String chaine_a_retourner;
