@@ -15,6 +15,13 @@ public class Fenetre_Principale extends javax.swing.JFrame {
      */
     public Fenetre_Principale() {
         initComponents();
+        System.out.println("Fenêtre crée");
+        resultat.setVisible(false);
+        prenom_apparait.setVisible(false);
+        nom_apparait.setVisible(false);
+        age_apparait.setVisible(false);
+        adresse_apparait.setVisible(false);
+        ans.setVisible(false);
     }
 
     /**
@@ -27,30 +34,196 @@ public class Fenetre_Principale extends javax.swing.JFrame {
     private void initComponents() {
 
         Msg_bienvenue = new javax.swing.JLabel();
+        Msg_adieu = new javax.swing.JLabel();
+        bouton_Valide = new javax.swing.JButton();
+        Entrez_votre_prenom = new javax.swing.JLabel();
+        prenom = new javax.swing.JTextField();
+        resultat = new javax.swing.JLabel();
+        prenom_apparait = new javax.swing.JLabel();
+        Entrez_votre_nom = new javax.swing.JLabel();
+        nom = new javax.swing.JTextField();
+        Entrez_votre_age = new javax.swing.JLabel();
+        age = new javax.swing.JTextField();
+        Entrez_votre_adresse = new javax.swing.JLabel();
+        adresse = new javax.swing.JTextField();
+        nom_apparait = new javax.swing.JLabel();
+        age_apparait = new javax.swing.JLabel();
+        adresse_apparait = new javax.swing.JLabel();
+        ans = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Msg_bienvenue.setText("Hello world!");
+
+        Msg_adieu.setText("Goodbye World");
+
+        bouton_Valide.setBackground(new java.awt.Color(0, 0, 255));
+        bouton_Valide.setForeground(new java.awt.Color(255, 255, 102));
+        bouton_Valide.setText("Cliquez ici!!");
+        bouton_Valide.setAutoscrolls(true);
+        bouton_Valide.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bouton_ValideActionPerformed(evt);
+            }
+        });
+
+        Entrez_votre_prenom.setText("Entrez votre prénom");
+
+        resultat.setForeground(new java.awt.Color(255, 0, 255));
+        resultat.setText("résultat");
+
+        prenom_apparait.setBackground(new java.awt.Color(0, 0, 0));
+        prenom_apparait.setForeground(new java.awt.Color(255, 0, 0));
+        prenom_apparait.setText("prenom_apparait");
+
+        Entrez_votre_nom.setText("Entrez votre nom");
+
+        nom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomActionPerformed(evt);
+            }
+        });
+
+        Entrez_votre_age.setText("Entrez votre age");
+
+        age.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ageActionPerformed(evt);
+            }
+        });
+
+        Entrez_votre_adresse.setText("Entrez votre adresse");
+
+        nom_apparait.setForeground(new java.awt.Color(0, 255, 0));
+        nom_apparait.setText("nom_apparait");
+
+        age_apparait.setForeground(new java.awt.Color(102, 102, 0));
+        age_apparait.setText("age_apparait");
+
+        adresse_apparait.setForeground(new java.awt.Color(255, 102, 0));
+        adresse_apparait.setText("adresse_apparait");
+
+        ans.setForeground(new java.awt.Color(102, 102, 0));
+        ans.setText("ans");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(153, 153, 153)
-                .addComponent(Msg_bienvenue)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(Entrez_votre_adresse)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(adresse))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Entrez_votre_prenom)
+                                    .addComponent(Entrez_votre_nom)
+                                    .addComponent(Entrez_votre_age))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(prenom, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                                    .addComponent(nom)
+                                    .addComponent(age)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(Msg_bienvenue)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(123, 123, 123))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(adresse_apparait)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Msg_adieu)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(resultat)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(prenom_apparait)
+                                .addGap(18, 18, 18)
+                                .addComponent(nom_apparait)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(bouton_Valide)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(age_apparait)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(ans)))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(Msg_bienvenue)
-                .addContainerGap(278, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Entrez_votre_prenom)
+                            .addComponent(prenom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Entrez_votre_nom)
+                            .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Entrez_votre_age)
+                            .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Entrez_votre_adresse)
+                            .addComponent(adresse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(bouton_Valide)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Msg_adieu)
+                            .addComponent(adresse_apparait))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(resultat)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(prenom_apparait)
+                            .addComponent(nom_apparait)
+                            .addComponent(age_apparait)
+                            .addComponent(ans))
+                        .addGap(34, 34, 34))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bouton_ValideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bouton_ValideActionPerformed
+        // TODO add your handling code here:
+        resultat.setVisible(true);
+        prenom_apparait.setVisible(true);
+        String a = prenom.getText();
+        prenom_apparait.setText(a);
+        nom_apparait.setVisible(true);
+        String b = nom.getText();
+        nom_apparait.setText(b);
+        age_apparait.setVisible(true);
+        String c = age.getText();
+        age_apparait.setText(c);
+        adresse_apparait.setVisible(true);
+        String d = adresse.getText();
+        adresse_apparait.setText(d);
+        ans.setVisible(true);
+
+    }//GEN-LAST:event_bouton_ValideActionPerformed
+
+    private void nomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomActionPerformed
+
+    private void ageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ageActionPerformed
 
     /**
      * @param args the command line arguments
@@ -88,6 +261,22 @@ public class Fenetre_Principale extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Entrez_votre_adresse;
+    private javax.swing.JLabel Entrez_votre_age;
+    private javax.swing.JLabel Entrez_votre_nom;
+    private javax.swing.JLabel Entrez_votre_prenom;
+    private javax.swing.JLabel Msg_adieu;
     private javax.swing.JLabel Msg_bienvenue;
+    private javax.swing.JTextField adresse;
+    private javax.swing.JLabel adresse_apparait;
+    private javax.swing.JTextField age;
+    private javax.swing.JLabel age_apparait;
+    private javax.swing.JLabel ans;
+    private javax.swing.JButton bouton_Valide;
+    private javax.swing.JTextField nom;
+    private javax.swing.JLabel nom_apparait;
+    private javax.swing.JTextField prenom;
+    private javax.swing.JLabel prenom_apparait;
+    private javax.swing.JLabel resultat;
     // End of variables declaration//GEN-END:variables
 }

@@ -23,19 +23,114 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
-              <Component id="Msg_bienvenue" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="183" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Entrez_votre_adresse" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="adresse" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Entrez_votre_prenom" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Entrez_votre_nom" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Entrez_votre_age" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="prenom" pref="226" max="32767" attributes="0"/>
+                                  <Component id="nom" max="32767" attributes="0"/>
+                                  <Component id="age" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Msg_bienvenue" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="adresse_apparait" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Msg_adieu" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="resultat" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="prenom_apparait" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="nom_apparait" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="bouton_Valide" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="age_apparait" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="ans" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Component id="Msg_bienvenue" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="278" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Entrez_votre_prenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="prenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Entrez_votre_nom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Entrez_votre_age" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="age" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Entrez_votre_adresse" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="adresse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="bouton_Valide" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="97" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Msg_adieu" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="adresse_apparait" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="resultat" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="prenom_apparait" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nom_apparait" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="age_apparait" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ans" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -44,6 +139,111 @@
     <Component class="javax.swing.JLabel" name="Msg_bienvenue">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hello world!"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Msg_adieu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Goodbye World"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="bouton_Valide">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cliquez ici!!"/>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bouton_ValideActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Entrez_votre_prenom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrez votre pr&#xe9;nom"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="prenom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="resultat">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="r&#xe9;sultat"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="prenom_apparait">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="prenom_apparait"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Entrez_votre_nom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrez votre nom"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nom">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Entrez_votre_age">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrez votre age"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="age">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Entrez_votre_adresse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrez votre adresse"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="adresse">
+    </Component>
+    <Component class="javax.swing.JLabel" name="nom_apparait">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="nom_apparait"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="age_apparait">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="age_apparait"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="adresse_apparait">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="adresse_apparait"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ans">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="ans"/>
       </Properties>
     </Component>
   </SubComponents>
