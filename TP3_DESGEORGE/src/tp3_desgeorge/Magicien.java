@@ -8,6 +8,19 @@ package tp3_desgeorge;
  *
  * @author rom
  */
-public class Magicien {
+public class Magicien extends Personnage{
+    boolean confirme;
+    public Magicien(String n, int i, boolean confirme){
+        super(n,i);
+        
+    }
+
+    public void setConfirme(boolean confirme) {
+        this.confirme = confirme;
+    }
+
+    public boolean isConfirme() {
+        return confirme;
+    }
     
 }
