@@ -14,7 +14,10 @@ public class TP3_DESGEORGE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Epee Excalibur = new Epee("Excalibur",7,5);
+        Epee Durandal = new Epee("Durandal",4,7);
+        Baton Chene = new Baton("Chene",4,5);
+        Baton Charme = new Baton("Chene",5,6);// TODO code application logic here
     }
     
 }
