@@ -4,6 +4,8 @@
  */
 package tp3_desgeorge;
 
+import Armess.Epee;
+import Armess.Baton;
 import java.util.Vector;
 
 /**
