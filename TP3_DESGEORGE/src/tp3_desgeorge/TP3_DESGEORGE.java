@@ -4,9 +4,10 @@
  */
 package tp3_desgeorge;
 
+import Armess.Armes;
 import Armess.Epee;
 import Armess.Baton;
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  *
@@ -23,16 +24,30 @@ public class TP3_DESGEORGE {
         Baton Chene = new Baton("Chene",4,5);
         Baton Charme = new Baton("Charme",5,6);// TODO code application logic here
         
-        Vector Tab=new Vector();
-        Tab.addElement(Excalibur);
-        Tab.addElement(Durandal);
-        Tab.addElement(Chene);
-        Tab.addElement(Charme);
+        ArrayList<Armes> Tab=new ArrayList<>();
+        Tab.add(Excalibur);
+        Tab.add(Durandal);
+        Tab.add(Chene);
+        Tab.add(Charme);
         int tailleTab = Tab.size();
         for(int i=0;i<tailleTab;i++){
-        System.out.println(Tab.elementAt(i));
+        System.out.println(Tab.get(i));
         }
-                
+        
+        Magicien Gandalf = new Magicien("Gandalf",65,true);
+        Magicien Garcimore = new Magicien("Garcimore",44,false);
+        Guerrier Conan = new Guerrier("Conan",78,false);
+        Guerrier Lannister = new Guerrier("Lannister",45,true);
+        
+        ArrayList<Personnage> Tab1=new ArrayList<>();
+        Tab1.add(Gandalf);
+        Tab1.add(Garcimore);
+        Tab1.add(Conan);
+        Tab1.add(Lannister);
+        int tailleTab1 = Tab1.size();
+        for(int i=0;i<tailleTab1;i++){
+        System.out.println(Tab1.get(i)); 
+        }
     }
     
 }
