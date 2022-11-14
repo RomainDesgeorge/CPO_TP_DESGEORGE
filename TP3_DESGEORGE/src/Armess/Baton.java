@@ -33,7 +33,7 @@ public class Baton extends Armes{
 
     @Override
     public String toString() {
-        return "Baton{" + "age=" + age + '}';
+        return "Baton{Nom=" + Nom + ", niv_attaque=" + getNiv_attaque()+ ", age=" + age + '}';
     }
     
 }

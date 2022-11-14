@@ -33,7 +33,7 @@ public class Epee extends Armes{
 
     @Override
     public String toString() {
-        return "Epee{" + "finesse=" + finesse + '}';
+        return "Epee{Nom=" + Nom + ", niv_attaque=" + getNiv_attaque() + ", finesse=" + finesse + '}';
     }
     
 }
