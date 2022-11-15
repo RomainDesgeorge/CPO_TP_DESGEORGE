@@ -25,7 +25,7 @@ public class TP3_DESGEORGE {
         Epee Excalibur = new Epee("Excalibur",7,5);
         Epee Durandal = new Epee("Durandal",4,7);
         Baton Chene = new Baton("Chene",4,5);
-        Baton Charme = new Baton("Charme",5,6);// TODO code application logic here
+        Baton Charme = new Baton("Charme",5,6);
         
         ArrayList<Armes> Tab=new ArrayList<>();
         Tab.add(Excalibur);
@@ -53,6 +53,24 @@ public class TP3_DESGEORGE {
         int tailleTab1 = Tab1.size();
         for(int i=0;i<tailleTab1;i++){
         System.out.println(Tab1.get(i)); 
+        
+        
+        Magicien Dumbledore = new Magicien("Dumbledore",82,true);
+        Guerrier Aragorn = new Guerrier("Aragorn",87,false);
+        Epee Goulijan = new Epee("Goulijan",5,8);
+        Epee Malcolm = new Epee("Malcolm",6,4);
+        Epee Yvan = new Epee("Yvan",7,5);
+        Baton Baguette = new Baton("Baguette",7,2);
+        Baton Sourceaux = new Baton("Sourceaux",5,5);
+        Baton Kali = new Baton("Kali",3,7);
+        
+        Aragorn.Ajout_arme(Kali);
+        Aragorn.Ajout_arme(Malcolm);
+        Aragorn.Ajout_arme(Goulijan);
+        Aragorn.Methode_arme(Malcolm); 
+        Dumbledore.Ajout_arme(Baguette);
+        Dumbledore.Ajout_arme(Sourceaux);
+        Dumbledore.Ajout_arme(Yvan);
 
 
         }
