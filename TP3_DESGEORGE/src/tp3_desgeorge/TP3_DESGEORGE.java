@@ -42,6 +42,9 @@ public class TP3_DESGEORGE {
         Guerrier Conan = new Guerrier("Conan",78,false);
         Guerrier Lannister = new Guerrier("Lannister",45,true);
         
+        Gandalf.Ajout_arme(Charme);
+        Gandalf.Methode_arme(Charme);        
+        
         ArrayList<Personnage> Tab1=new ArrayList<>();
         Tab1.add(Gandalf);
         Tab1.add(Garcimore);
@@ -51,7 +54,7 @@ public class TP3_DESGEORGE {
         for(int i=0;i<tailleTab1;i++){
         System.out.println(Tab1.get(i)); 
 
-        
+
         }
     }
     

@@ -33,7 +33,7 @@ public class Guerrier extends Personnage{
 
     @Override
     public String toString() {
-        return "Guerrier{" + "Nom=" + Nom + ", niv_vie=" + getNiv_vie() + ", confirme=" + isCheval() + '}';
+        return "Guerrier{" + "Nom=" + Nom + ", niv_vie=" + getNiv_vie() + ", confirme=" + isCheval() + "et a comme arme en main: "+arme_en_main+"}";
     }
     
 }
