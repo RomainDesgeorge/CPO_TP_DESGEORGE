@@ -4,6 +4,8 @@
  */
 package Personnages;
 
+import Armess.Epee;
+
 /**
  *
  * @author rom
@@ -19,6 +21,16 @@ public class Guerrier extends Personnage{
         this.cheval = cheval;
     }
 
+        public void Armepredilection(){
+        int a=0;
+        for (int i=0; i<Tab_armes.size(); i++){
+            if (Tab_armes.get(i) instanceof Epee){
+                a += 1;
+            }
+    }
+        System.out.println("Le guerrier a "+a+" arme(s) de prédilection(s)");
+        
+    }
     public String isCheval() {
         String a;
         if (cheval==true){

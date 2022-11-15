@@ -38,16 +38,19 @@ public class Personnage {
     
     
     public void Methode_arme(Armes arme){
-        
-        for (int i=0;i<5;i++){
+    int verif = 0;    
+        for (int i=0;i<Tab_armes.size();i++){
+            
             if (Tab_armes.get(i) == arme){
-                System.out.println("l'arme a bien été trouvée et affectée");
+                System.out.println("l'arme a bien ete trouvee et affectee");
                 arme_en_main = Tab_armes.get(i);
+                verif = 1;
                 break;                
             }
-            else{
-                System.out.println("l'arme n'a pas été trouvée");
-            }
+            
+        }
+        if (verif==0){
+       System.out.println("l'arme n'a pas ete trouvee"); 
         }
     }
 

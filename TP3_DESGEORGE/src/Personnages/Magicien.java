@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Personnages;
-
+import Armess.Armes;
+import Armess.Baton;
+import java.util.ArrayList;
 /**
  *
  * @author rom
@@ -20,6 +22,19 @@ public class Magicien extends Personnage{
         this.confirme = confirme;
     }
 
+    
+    public void Armepredilection(){
+        int a=0;
+        for (int i=0; i<Tab_armes.size(); i++){
+            if (Tab_armes.get(i) instanceof Baton){
+                a += 1;
+            }
+    }
+        System.out.println("Le magicien a "+a+" arme(s) de prédilection(s)");
+        
+    }
+    
+    
     public String isConfirme(){
         String a;
         if (confirme==true){

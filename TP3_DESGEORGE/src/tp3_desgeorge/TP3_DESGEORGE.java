@@ -71,6 +71,9 @@ public class TP3_DESGEORGE {
         Dumbledore.Ajout_arme(Baguette);
         Dumbledore.Ajout_arme(Sourceaux);
         Dumbledore.Ajout_arme(Yvan);
+        Aragorn.Methode_arme(Yvan);
+        Aragorn.Armepredilection();
+        Dumbledore.Armepredilection();
 
 
         }
