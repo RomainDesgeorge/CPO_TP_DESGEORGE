@@ -4,6 +4,9 @@
  */
 package tp3_desgeorge;
 
+import Personnages.Personnage;
+import Personnages.Magicien;
+import Personnages.Guerrier;
 import Armess.Armes;
 import Armess.Epee;
 import Armess.Baton;
