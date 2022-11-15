@@ -10,8 +10,9 @@ package Personnages;
  */
 public class Magicien extends Personnage{
     boolean confirme;
-    public Magicien(String n, int i, boolean confirme){
+    public Magicien(String n, int i, boolean confirm2e){
         super(n,i);
+        confirme = confirm2e;
         
     }
 
@@ -19,8 +20,22 @@ public class Magicien extends Personnage{
         this.confirme = confirme;
     }
 
-    public boolean isConfirme() {
-        return confirme;
+    public String isConfirme(){
+        String a;
+        if (confirme==true){
+            a = "Confirmé";
+            
+        }else{
+            a = "novice";
+        }
+            
+        return a;
+    }
+
+    
+    @Override
+    public String toString() {
+        return "Magicien{" + "Nom=" + Nom + ", niv_vie=" + getNiv_vie() + ", confirme=" + isConfirme() + '}';
     }
     
 }
