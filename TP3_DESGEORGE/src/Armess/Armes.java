@@ -10,8 +10,8 @@ package Armess;
  */
 public class Armes {
     public Armes(String unNom, int att){
-        Nom = unNom;//prendre en donnée unNom et le transformer en Nom
-        niv_attaque = att;//introduire à la variable nbVoiture 0
+        Nom = unNom;
+        niv_attaque = att;
        
     }
     String Nom;

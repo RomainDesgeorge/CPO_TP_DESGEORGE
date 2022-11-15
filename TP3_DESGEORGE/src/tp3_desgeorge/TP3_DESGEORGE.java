@@ -50,6 +50,9 @@ public class TP3_DESGEORGE {
         int tailleTab1 = Tab1.size();
         for(int i=0;i<tailleTab1;i++){
         System.out.println(Tab1.get(i)); 
+        Armes arme_portee;
+        ArrayList<Armes> Tab_armes1=new ArrayList<>(5);
+        
         }
     }
     
